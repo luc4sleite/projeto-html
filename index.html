@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <a href="#">Code News</a>
+            <a href="#" id="inicio">Code News</a>
             <div>
                 <a href="#noticias-locais">Notícias Locais</a>
                 <a href="#politica">Política</a>
@@ -24,11 +24,114 @@
     </header>
     <main>
         <aside>
-            <a href="#noticias-locais">Notícias Locais</a>
-            <a href="#politica">Política</a>
-            <a href="#esportes">Esportes</a>
-            <a href="#entretenimento">Entretenimento</a>
-            <a href="#videos">Vídeos</a>
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#artigos" id="artigos-menu">Artigos</a>
+                    <ul class="aside__artigos">
+                        <li>
+                            <a href="artigos/artigo-1.html">Tendências...</a>
+                        </li>
+                        <li>
+                            <a href="artigos/artigo-2.html">As Implicações...</a>
+                        </li>
+                        <li>
+                            <a href="artigos/artigo-3.html">O Futuro...</a>
+                        </li>
+                        <li>
+                            <a href="artigos/artigo-4.html">Os Benefícios...</a>
+                        </li>
+                        <li>
+                            <a href="artigos/artigo-5.html">A Revolução...</a>
+                        </li>
+                        <li>
+                            <a href="artigos/artigo-6.html">O Papel...</a>
+                        </li>
+                        <li>
+                            <a href="artigos/artigo-7.html">Os Avanços...</a>
+                        </li>
+                        <li>
+                            <a href="artigos/artigo-8.html">O Impacto...</a>
+                        </li>
+                        <li>
+                            <a href="artigos/artigo-9.html">A Evolução...</a>
+                        </li>
+                        <li>
+                            <a href="artigos/artigo-10.html">Privacidade...</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#populares">Mais Populares</a>
+                </li>
+                <li>
+                    <a href="#noticias-locais" id="noticias-menu">Notícias Locais</a>
+                    <ul class="aside__noticias-locais">
+                        <li>
+                            <a href="#noticias-locais-1">Incidente com Drone</a>
+                        </li>
+                        <li>
+                            <a href="#noticias-locais-2">Pane no Sistema de Tráfego</a>
+                        </li>
+                        <li>
+                            <a href="#noticias-locais-3">Vazamento de Dados</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#politica" id="politica-menu">Política</a>
+                    <ul class="aside__politicas">
+                        <li>
+                            <a href="#politica-1">IA Ajuda Tomada de Decisões</a>
+                        </li>
+                        <li>
+                            <a href="#politica-2">Redes Sociais na Política</a>
+                        </li>
+                        <li>
+                            <a href="#politica-3">Regulamentação da Tecnologia</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#esportes" id="esportes-menu">Esportes</a>
+                    <ul class="aside__esportes">
+                        <li>
+                            <a href="#esportes-1">VAR</a>
+                        </li>
+                        <li>
+                            <a href="#esportes-2">Análise de Dados</a>
+                        </li>
+                        <li>
+                            <a href="#esportes-3">VR no Esporte</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#entretenimento" id="entretenimento-menu">Entretenimento</a>
+                    <ul class="aside__entretenimento">
+                        <li>
+                            <a href="#entretenimento-1">Streaming</a>
+                        </li>
+                        <li>
+                            <a href="#entretenimento-2">Realidade Virtual</a>
+                        </li>
+                        <li>
+                            <a href="#entretenimento-3">IA</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#videos">Vídeos</a>
+                </li>
+                <li>
+                    <a href="#melhores-autores">Melhores Autores</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
         </aside>
         <section class="code__banner">
             <h1 class="gradient-text">Hello, world!</h1>
@@ -230,7 +333,7 @@
         <section class="code__noticias-locais" id="noticias-locais">
             <h2 class="gradient-text">Noticiais Locais</h2>
             <ul>
-                <li>
+                <li id="noticias-locais-1">
                     <article>
                         <img src="https://images.unsplash.com/photo-1521405924368-64c5b84bec60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Drone" width="150">
                         <h3>Incidente com Drone em Parque Local Deixa Feridos</h3>
@@ -239,7 +342,7 @@
                         </p>
                     </article>
                 </li>
-                <li>
+                <li id="noticias-locais-2">
                     <article>
                         <img src="https://images.unsplash.com/photo-1605355654568-a896fe1d8b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Semafóro" width="150">
                         <h3>Pane em Sistema de Tráfego Causa Congestionamentos nas Ruas</h3>
@@ -248,7 +351,7 @@
                         </p>
                     </article>
                 </li>
-                <li>
+                <li id="noticias-locais-3">
                     <article>
                         <img src="https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Smartphone" width="150">
                         <h3>Vazamento de Dados Pessoais Preocupa Usuários de Aplicativo de Compras</h3>
@@ -263,30 +366,30 @@
         <section class="code__politica" id="politica">
             <h2 class="gradient-text">Política</h2>
             <ul>
-                <li>
+                <li id="politica-1">
                     <article>
-                        <img src="https://images.unsplash.com/photo-1521405924368-64c5b84bec60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Drone" width="150">
-                        <h3>Incidente com Drone em Parque Local Deixa Feridos</h3>
+                        <img src="https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=745&q=80" alt="IA" width="150">
+                        <h3>Inteligência Artificial é usada para aprimorar a tomada de decisões políticas</h3>
                         <p>
-                            Um incidente com um drone em um parque local deixou três pessoas feridas no último fim de semana. O drone, que estava sendo utilizado para capturar imagens aéreas, perdeu o controle e caiu sobre um grupo de visitantes. Os feridos foram prontamente socorridos e encaminhados ao hospital mais próximo, onde receberam tratamento para ferimentos leves. As autoridades locais estão investigando o ocorrido e pedem cautela no uso de drones em áreas públicas.
+                            No cenário político atual, a tecnologia está desempenhando um papel crucial na melhoria da tomada de decisões. Com o avanço da inteligência artificial (IA), governos de diversos países estão implementando sistemas de IA para analisar dados e fornecer insights valiosos aos líderes políticos.
                         </p>
                     </article>
                 </li>
-                <li>
+                <li id="politica-2">
                     <article>
-                        <img src="https://images.unsplash.com/photo-1605355654568-a896fe1d8b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Semafóro" width="150">
-                        <h3>Pane em Sistema de Tráfego Causa Congestionamentos nas Ruas</h3>
+                        <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Redes Sociais" width="150">
+                        <h3> Redes sociais desempenham um papel cada vez mais importante na política</h3>
                         <p>
-                            Uma pane em um sistema de tráfego inteligente causou grandes congestionamentos nas ruas da cidade nesta manhã. O sistema, responsável por controlar semáforos e otimizar o fluxo de veículos, apresentou falhas técnicas, resultando em atrasos significativos e engarrafamentos em várias vias importantes. Equipes de manutenção foram acionadas para solucionar o problema, mas o impacto no trânsito foi sentido durante boa parte do dia.
+                            A influência das redes sociais no cenário político tem sido cada vez mais evidente. Plataformas como Facebook, Twitter e Instagram têm desempenhado um papel fundamental na disseminação de informações e no engajamento dos cidadãos nas questões políticas de seus países.
                         </p>
                     </article>
                 </li>
-                <li>
+                <li id="politica-3">
                     <article>
-                        <img src="https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Smartphone" width="150">
-                        <h3>Vazamento de Dados Pessoais Preocupa Usuários de Aplicativo de Compras</h3>
+                        <img src="https://images.unsplash.com/photo-1535483102974-fa1e64d0ca86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="Bandeiras" width="150">
+                        <h3>Regulamentação da tecnologia na política gera debates acalorados</h3>
                         <p>
-                            Um vazamento de dados pessoais de usuários de um popular aplicativo de compras tem preocupado a comunidade local. Segundo relatos, informações como nomes, endereços e detalhes de pagamento foram expostos devido a uma falha de segurança na plataforma. A empresa responsável pelo aplicativo emitiu um comunicado informando que está investigando o incidente e tomando medidas para reforçar a proteção de dados. Usuários afetados foram orientados a alterar suas senhas e monitorar suas contas em busca de atividades suspeitas.
+                            O impacto da tecnologia na política também tem levantado questões relacionadas à regulamentação. O uso de tecnologias como big data, análise de dados e algoritmos para influenciar eleições e manipular informações tem gerado debates acalorados.
                         </p>
                     </article>
                 </li>
@@ -296,30 +399,30 @@
         <section class="code__esportes" id="esportes">
             <h2 class="gradient-text">Esportes</h2>
             <ul>
-                <li>
+                <li id="esportes-1">
                     <article>
-                        <img src="https://images.unsplash.com/photo-1521405924368-64c5b84bec60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Drone" width="150">
-                        <h3>Incidente com Drone em Parque Local Deixa Feridos</h3>
+                        <img src="https://images.unsplash.com/photo-1649001863283-0ce7ca4e8754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Árbrito" width="150">
+                        <h3>Tecnologia de vídeo auxilia árbitros em decisões esportivas</h3>
                         <p>
-                            Um incidente com um drone em um parque local deixou três pessoas feridas no último fim de semana. O drone, que estava sendo utilizado para capturar imagens aéreas, perdeu o controle e caiu sobre um grupo de visitantes. Os feridos foram prontamente socorridos e encaminhados ao hospital mais próximo, onde receberam tratamento para ferimentos leves. As autoridades locais estão investigando o ocorrido e pedem cautela no uso de drones em áreas públicas.
+                            A tecnologia está desempenhando um papel cada vez mais importante no auxílio aos árbitros e juízes esportivos. O uso de sistemas de vídeo, como o VAR (Video Assistant Referee), tem sido adotado em diversos esportes para revisar lances duvidosos e tomar decisões mais precisas.
                         </p>
                     </article>
                 </li>
-                <li>
+                <li id="esportes-2">
                     <article>
-                        <img src="https://images.unsplash.com/photo-1605355654568-a896fe1d8b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Semafóro" width="150">
-                        <h3>Pane em Sistema de Tráfego Causa Congestionamentos nas Ruas</h3>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Dados" width="150">
+                        <h3>Análise de dados e inteligência artificial impulsionam o desempenho dos atletas</h3>
                         <p>
-                            Uma pane em um sistema de tráfego inteligente causou grandes congestionamentos nas ruas da cidade nesta manhã. O sistema, responsável por controlar semáforos e otimizar o fluxo de veículos, apresentou falhas técnicas, resultando em atrasos significativos e engarrafamentos em várias vias importantes. Equipes de manutenção foram acionadas para solucionar o problema, mas o impacto no trânsito foi sentido durante boa parte do dia.
+                            A análise de dados e o uso da inteligência artificial têm revolucionado a forma como os atletas se preparam e melhoram seu desempenho. Por meio de dispositivos vestíveis e sensores, os atletas podem coletar uma quantidade imensa de dados sobre seu corpo, movimentos e condição física.
                         </p>
                     </article>
                 </li>
-                <li>
+                <li id="esportes-3">
                     <article>
-                        <img src="https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Smartphone" width="150">
-                        <h3>Vazamento de Dados Pessoais Preocupa Usuários de Aplicativo de Compras</h3>
+                        <img src="https://images.unsplash.com/photo-1509473383868-b934025a9bc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="Foto no estádio" width="150">
+                        <h3>Realidade virtual proporciona experiências imersivas para os fãs de esportes</h3>
                         <p>
-                            Um vazamento de dados pessoais de usuários de um popular aplicativo de compras tem preocupado a comunidade local. Segundo relatos, informações como nomes, endereços e detalhes de pagamento foram expostos devido a uma falha de segurança na plataforma. A empresa responsável pelo aplicativo emitiu um comunicado informando que está investigando o incidente e tomando medidas para reforçar a proteção de dados. Usuários afetados foram orientados a alterar suas senhas e monitorar suas contas em busca de atividades suspeitas.
+                            A tecnologia de realidade virtual (VR) está transformando a maneira como os fãs de esportes acompanham e vivenciam os eventos esportivos. Com a VR, os espectadores podem ter experiências imersivas, permitindo que se sintam como se estivessem no estádio ou na pista, mesmo estando em casa.
                         </p>
                     </article>
                 </li>
@@ -329,40 +432,51 @@
         <section class="code__entretenimento" id="entretenimento">
             <h2 class="gradient-text">Entretenimento</h2>
             <ul>
-                <li>
+                <li id="entretenimento-1">
                     <article>
-                        <img src="https://images.unsplash.com/photo-1521405924368-64c5b84bec60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Drone" width="150">
-                        <h3>Incidente com Drone em Parque Local Deixa Feridos</h3>
+                        <img src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80" alt="Streaming" width="150">
+                        <h3>Streaming e plataformas digitais revolucionam a indústria do entretenimento</h3>
                         <p>
-                            Um incidente com um drone em um parque local deixou três pessoas feridas no último fim de semana. O drone, que estava sendo utilizado para capturar imagens aéreas, perdeu o controle e caiu sobre um grupo de visitantes. Os feridos foram prontamente socorridos e encaminhados ao hospital mais próximo, onde receberam tratamento para ferimentos leves. As autoridades locais estão investigando o ocorrido e pedem cautela no uso de drones em áreas públicas.
+                            A tecnologia está transformando a indústria do entretenimento, especialmente com o surgimento de serviços de streaming e plataformas digitais. Empresas como Netflix, Amazon Prime Video e Disney+ estão mudando a forma como consumimos filmes, séries e conteúdo audiovisual.
                         </p>
                     </article>
                 </li>
-                <li>
+                <li id="entretenimento-2">
                     <article>
-                        <img src="https://images.unsplash.com/photo-1605355654568-a896fe1d8b35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Semafóro" width="150">
-                        <h3>Pane em Sistema de Tráfego Causa Congestionamentos nas Ruas</h3>
+                        <img src="https://images.unsplash.com/photo-1459550146610-232100af5511?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=635&q=80" alt="Realidade Virtual" width="150">
+                        <h3>Realidade aumentada e virtual proporcionam experiências imersivas aos espectadores</h3>
                         <p>
-                            Uma pane em um sistema de tráfego inteligente causou grandes congestionamentos nas ruas da cidade nesta manhã. O sistema, responsável por controlar semáforos e otimizar o fluxo de veículos, apresentou falhas técnicas, resultando em atrasos significativos e engarrafamentos em várias vias importantes. Equipes de manutenção foram acionadas para solucionar o problema, mas o impacto no trânsito foi sentido durante boa parte do dia.
+                            A tecnologia de realidade aumentada (AR) e realidade virtual (VR) está revolucionando a forma como os espectadores experimentam o entretenimento. Por meio de aplicativos e dispositivos, as pessoas podem interagir com personagens virtuais, explorar ambientes digitais e vivenciar experiências imersivas como nunca antes.
                         </p>
                     </article>
                 </li>
-                <li>
+                <li id="entretenimento-3">
                     <article>
-                        <img src="https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Smartphone" width="150">
-                        <h3>Vazamento de Dados Pessoais Preocupa Usuários de Aplicativo de Compras</h3>
+                        <img src="https://images.unsplash.com/photo-1569396116180-210c182bedb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" alt="IA" width="150">
+                        <h3>Inteligência artificial personaliza recomendações de entretenimento</h3>
                         <p>
-                            Um vazamento de dados pessoais de usuários de um popular aplicativo de compras tem preocupado a comunidade local. Segundo relatos, informações como nomes, endereços e detalhes de pagamento foram expostos devido a uma falha de segurança na plataforma. A empresa responsável pelo aplicativo emitiu um comunicado informando que está investigando o incidente e tomando medidas para reforçar a proteção de dados. Usuários afetados foram orientados a alterar suas senhas e monitorar suas contas em busca de atividades suspeitas.
+                            A inteligência artificial (IA) está desempenhando um papel importante na personalização das recomendações de entretenimento. Plataformas de streaming e serviços de música utilizam algoritmos de IA para analisar os hábitos de consumo dos usuários, suas preferências e histórico de visualização/audição.
                         </p>
                     </article>
                 </li>
             </ul>
         </section>
 
-        <section id="videos">
-            <h2>Vídeos</h2>
+        <section class="code__videos" id="videos">
+            <h2 class="gradient-text">Vídeos</h2>
             <ul>
-                <li></li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4SPwc1AyMsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/koh90HN__FY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y2oTLKEHxOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/imTUTl2sCW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </li>
             </ul>
         </section>
 
@@ -370,28 +484,28 @@
             <h2 class="gradient-text">Melhores Autores</h2>
             <ol>
                 <li>
-                    <h3>Autor</h3>
+                    <h3>Amanda Santos</h3>
                 </li>
                 <li>
-                    <h3>Autor</h3>
+                    <h3>Carlos Silva</h3>
                 </li>
                 <li>
-                    <h3>Autor</h3>
+                    <h3>Laura Mendes</h3>
                 </li>
                 <li>
-                    <h3>Autor</h3>
+                    <h3>Ricardo Oliveria</h3>
                 </li>
                 <li>
-                    <h3>Autor</h3>
+                    <h3>Sofia Rodrigues</h3>
                 </li>
                 <li>
-                    <h3>Autor</h3>
+                    <h3>Gabriel Torres</h3>
                 </li>
                 <li>
-                    <h3>Autor</h3>
+                    <h3>Renata Ferreira</h3>
                 </li>
                 <li>
-                    <h3>Autor</h3>
+                    <h3>Pedro Castro</h3>
                 </li>
             </ol>
         </section>
@@ -410,5 +524,6 @@
         </a>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

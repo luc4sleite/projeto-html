@@ -29,6 +29,7 @@ ul {
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
+    text-transform: uppercase;
 }
 
 /* ESTILIZAÇÃO DO HEADER E NAV */
@@ -61,8 +62,78 @@ header nav div a {
     text-transform: uppercase;
 }
 
+/* ESTILIZAÇÃO ASIDE */
+
 aside {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 0.15rem;
+    border-radius: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+aside ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+aside ul li:hover{
+    color: #F49867;
+}
+
+/* ASIDE ARTIGOS */
+.aside__artigos {
     display: none;
+    flex-direction: column;
+}
+
+.aside__artigos, .aside__noticias-locais, .aside__politicas, .aside__esportes, .aside__entretenimento li {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    padding-left: 0.25rem;
+    font-size: 12px;
+}
+
+.aside__artigos, .aside__noticias-locais, .aside__politicas, .aside__esportes, .aside__entretenimento li:hover{
+    color: #fff;
+}
+
+/* ASIDE NOTICIAS LOCAIS */
+.aside__noticias-locais {
+    display: none;
+    flex-direction: column;
+}
+
+/* ASIDE POLÍTICAS */
+.aside__politicas {
+    display: none;
+    flex-direction: column;
+}
+
+/* ASIDE ESPORTES */
+.aside__esportes {
+    display: none;
+    flex-direction: column;
+}
+
+/* ASIDE ENTRETENIMENTO */
+.aside__entretenimento {
+    display: none;
+    flex-direction: column;
 }
 
 /* ESTILIZAÇÃO BANNER */
@@ -150,7 +221,7 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
     margin-top: 5rem;
 }
 
@@ -163,8 +234,6 @@ aside {
 }
 
 .code__populares table {
-    /* display: flex;
-    flex-direction: column; */
     text-align: center;
 }
 
@@ -413,6 +482,34 @@ aside {
     border-radius: 5px;
 }
 
+/* ESTILIZAÇÃO VÍDEOS */
+
+.code__videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+    margin-top: 5rem;
+}
+
+.code__videos h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.code__videos ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
 /* ESTILIZAÇÃO MELHORES AUTORES */
 
 .code__melhores-autores {
@@ -420,8 +517,9 @@ aside {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .code__melhores-autores h2 {
@@ -444,5 +542,134 @@ aside {
 .code__melhores-autores ol li {
     background: rgba(255, 255, 255, 0.25);
     padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+/* ESTILIZAÇÃO FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem 4rem;
+    background-color: #000;
+}
+
+footer h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/* PÁGINA DE CONTATO */
+
+.code__contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.code__contato form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.code__contato form label {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.code__contato form input {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 410px;
+    font-family: "Manrope", sans-serif;
+}
+
+.code__contato form input:focus {
+    outline: #000;
+    border: 1px solid #000;
+}
+
+.code__contato form select {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 474px;
+    font-family: "Manrope", sans-serif;
+}
+
+.code__contato form select:focus {
+    outline: #000;
+    border: 1px solid #000;
+}
+
+.code__contato form textarea {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 410px;
+    height: 200px;
+    font-family: "Manrope", sans-serif;
+}
+
+.code__contato form textarea:focus {
+    outline: #000;
+    border: 1px solid #000;
+}
+
+.code__contato form button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 474px;
+    background-color: #000;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.code__contato form button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* ARTIGOS */
+.artigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem;
+    gap: 1rem;
+}
+
+.artigo img {
     border-radius: 10px;
 }
