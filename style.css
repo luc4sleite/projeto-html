@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background: rgb(61,137,235);
+    background: radial-gradient(circle, rgba(61,137,235,1) 0%, rgba(3,38,85,1) 100%);
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.gradient-text {
+    background-image: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* ESTILIZAÇÃO DO HEADER E NAV */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+}
+
+header nav a {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header nav a:hover {
+    color: #F49867;
+}
+
+header nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+header nav div a {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+aside {
+    display: none;
+}
+
+/* ESTILIZAÇÃO BANNER */
+.code__banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.code__banner h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.code__banner p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ESTILIZAÇÃO ARTIGOS */
+.code__artigos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.code__artigos h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.code__artigos ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.code__artigos ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    width: 15rem;
+    height: 20rem;
+}
+
+.code__artigos ul li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.code__artigos ul li a article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+.code__artigos ul li a article img {
+    border-radius: 5px;
+}
+
+/* ESTILIZAÇÃO POPULARES */
+.code__populares {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-top: 5rem;
+}
+
+.code__populares h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.code__populares table {
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+}
+
+.code__populares table thead {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.code__populares table thead th {
+    padding: 1rem 2rem;
+}
+
+.code__populares table tbody tr td {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.code__populares table tbody tr td:hover {
+    color: #F49867;
+}
+
+/* ESTILIZAÇÃO NOTÍCIAS LOCAIS */
+.code__noticias-locais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-top: 5rem;
+}
+
+.code__noticias-locais h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.code__noticias-locais ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.code__noticias-locais ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    width: 15rem;
+    height: 45rem;
+}
+
+.code__noticias-locais ul li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.code__noticias-locais ul li article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+.code__noticias-locais ul li article img {
+    border-radius: 5px;
+}
+
+/* ESTILIZAÇÃO POLÍTICAS */
+.code__politica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-top: 5rem;
+}
+
+.code__politica h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.code__politica ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.code__politica ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    width: 15rem;
+    height: 45rem;
+}
+
+.code__politica ul li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.code__politica ul li article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+.code__politica ul li article img {
+    border-radius: 5px;
+}
+
+/* ESTILIZAÇÃO ESPORTES */
+.code__esportes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-top: 5rem;
+}
+
+.code__esportes h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.code__esportes ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.code__esportes ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    width: 15rem;
+    height: 45rem;
+}
+
+.code__esportes ul li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.code__esportes ul li article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+.code__esportes ul li article img {
+    border-radius: 5px;
+}
+
+/* ESTILIZAÇÃO ENTRETENIMENTO */
+.code__entretenimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-top: 5rem;
+}
+
+.code__entretenimento h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.code__entretenimento ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.code__entretenimento ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    width: 15rem;
+    height: 45rem;
+}
+
+.code__entretenimento ul li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.code__entretenimento ul li article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+}
+
+.code__entretenimento ul li article img {
+    border-radius: 5px;
+}
+
+/* ESTILIZAÇÃO MELHORES AUTORES */
+
+.code__melhores-autores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    margin-top: 5rem;
+}
+
+.code__melhores-autores h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+
+.code__melhores-autores ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.code__melhores-autores ol li {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
