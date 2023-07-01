@@ -54,8 +54,8 @@ Execute no terminal o seguinte código:
 
 <br>
 
-## 🙋🏾‍♂️ Autor
-<img style="width:200px; border-radius:100%;" src="https://media.licdn.com/dms/image/D4D03AQEaol4HcUbJFQ/profile-displayphoto-shrink_800_800/0/1678292267237?e=1693440000&v=beta&t=FIpRwe8kQ9S-PuGEvaZ-G2ZWAZPdrPWAHakJWYT96H8" alt="Lucas">
+## 🙋🏾‍♂️Autor
+<img style="width:200px" src="https://media.licdn.com/dms/image/D4D03AQEaol4HcUbJFQ/profile-displayphoto-shrink_800_800/0/1678292267237?e=1693440000&v=beta&t=FIpRwe8kQ9S-PuGEvaZ-G2ZWAZPdrPWAHakJWYT96H8" alt="Lucas">
 
 <br>
 
